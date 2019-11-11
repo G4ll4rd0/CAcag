@@ -1,0 +1,104 @@
+header {
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 14%;
+	background: #009945;
+	font-size: 4em;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+footer {
+	position: fixed;
+	z-index: 0;
+	width: 100%;
+	height: 14%;
+	background: #009945;
+	font-size: 4em;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	color: #FFFFFF;
+	bottom: 0%;
+	text-align: right;
+}
+
+
+h1.logIn{
+	position:absolute;
+	left: 41.72%;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1.8em;
+	color: #000000;
+}
+
+input.logIn {
+	position: absolute;
+	width: 18.3%;
+	height: 6.5%;
+	left: 41.72%;
+	background: #E0E0E0;
+	mix-blend-mode: normal;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 95%;
+	color: #000000;
+}
+
+h1.admin {
+	position: absolute;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3.75em;
+	line-height: 106px;
+}
+
+button.admin {
+	position: absolute;
+	width: 26%;
+	height: 13%;
+	left: 37%;
+	mix-blend-mode: normal;
+	font-family:Roboto Slab;
+	font-style: normal;
+	font-size: 250%; 
+}
+
+h1.alumnos {
+	position:absolute;
+	left: 558px;
+	top: 80px;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 3.75em;
+	line-height: 106px;
+}
+
+
+
+img.cruz {
+	position: absolute;
+	width:18%;
+	height:46%;
+	left:5%;
+	top:26%;
+	opacity: 0.6;
+}
+
+img.bchc {
+	position: absolute;
+	width:23%;
+	height:50%;
+	left:72.5%;
+	top:24.32%;
+	opacity: 0.6;
+}
+

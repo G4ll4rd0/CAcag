@@ -13,14 +13,14 @@
 
     <!-- Div -->
     <div>
-<%@page import="java.sql.*"%>
+		<%@page import="java.sql.*"%>
 <% //@ include file="Database.jsp" %>
 <%
 final boolean DEBUG = false;
 
 	//String db = request.getParameter("db");
 	String db = "concurso";
-	String user 	= "USER2";
+	String user 	= "USER";
 	String passwd	= "CAUser";
 	
 	Connection conn = null;
@@ -55,22 +55,19 @@ final boolean DEBUG = false;
 			t = rs.getInt("tipo_id");
 			id = rs.getInt("user_id");
 			sesion.setAttribute("idr", id);
-			sesion.setAttribute("tr",t);
 		}
-		String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/concurso/";
+		String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/ejemplos/";
 		String pagina = null;
-		
-		try{conn.close();}catch(Exception e){}
 		
 		switch (t)
 		{
 			case 1:
 			case 2:
-				pagina = "alumnos.jsp";
+				pagina = "Alumnos.jsp";
 			    response.sendRedirect(servidor + pagina);
 				break;
 			case 3:
-				pagina = "maestros.jsp";
+				pagina = "Maestros.html";
 			    response.sendRedirect(servidor + pagina);
 				break;
 			case 4:
@@ -78,7 +75,8 @@ final boolean DEBUG = false;
 			    response.sendRedirect(servidor + pagina);
 				break;
 			default:
-				out.println("<br/><button type= \"button\" style = \" position: absolute;width: 22%;height: 8%; top: 46%; left: 39%;background: #C4C4C4; border: 3px solid #009945;mix-blend-mode: normal;font-family:Roboto Slab;font-style: normal;font-size: 20px;\" href=\"#\" onclick=\"javascript:window.history.back();\"> " + prnt + " volver</a>");
+				out.println(prnt);
+				out.println("<br/><button type= \"button\" style = \" position: absolute;width: 350px;height: 75px; top: 230px; left: 500px;background: #C4C4C4; border: 3px solid #009945;mix-blend-mode: normal;font-family:Roboto Slab;font-style: normal;font-size: 40px;\" href=\"#\" onclick=\"javascript:window.history.back();\">continua aqui</a>");
 				break;
 		}
 					

@@ -2,7 +2,7 @@
 <%
 	//String db = request.getParameter("db");
 	String db = "concurso";
-	String user 	= "USER";
+	String user 	= "USER2";
 	String passwd	= "CAUser";
 	
 	Connection conn = null;

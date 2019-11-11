@@ -2,35 +2,35 @@
 <%
 	//String db = request.getParameter("db");
 	String db = "concurso";
-	String user 	= "USER2";
+	String user 	= "USER";
 	String passwd	= "CAUser";
 	
 	Connection conn = null;
 	Statement stmt	= null;
+	ResultSet rs	= null;
 	
 	String sql = null;
 	
-	String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/concurso/";
-	String pagina = "maestros.jsp";
 	
-	HttpSession sesion = request.getSession();
-	Integer reid = (Integer)sesion.getAttribute("reid");
-
 	try
 	{
 		Class.forName("org.gjt.mm.mysql.Driver");
 		conn = DriverManager.getConnection("jdbc:mysql://localhost/" + db, user, passwd);
 		
+		out.println (db + " database successfully opened. <br/>");
+		
 		stmt = conn.createStatement();
 		
-		sql = "UPDATE preg_respon pr SET pr.calificacion = 1 WHERE pr.calificacion IS NULL AND pr.respuesta_id =" + reid ;
+		sql = "SELECT * FROM preguntas";
 		
-		stmt.executeUpdate(sql);
+		rs = stmt.executeQuery(sql);
 		
-		reid = null;
-		try{conn.close();} catch(Exception e){}
+		while (rs.next())
+		{
+			out.println("<br/>" + rs.getString("pregunta") + ": " + rs.getString("respuesta"));
+		}
 		
-		response.sendRedirect(servidor+pagina);
+		rs.close();
 		
 	}
 	catch(SQLException e)
@@ -39,6 +39,7 @@
 	}
 	finally
 	{
+		try{rs.close();} catch(Exception e){}
 		try{stmt.close();} catch(Exception e){}
 		try{conn.close();} catch(Exception e){}
 	}

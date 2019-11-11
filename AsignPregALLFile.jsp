@@ -7,7 +7,7 @@ final	boolean DEBUG = false;
 
 	//String db = request.getParameter("db");
 	String db = "concurso";
-	String user 	= "USER";
+	String user 	= "USER2";
 	String passwd	= "CAUser";
 	
 	Connection conn = null;
@@ -28,7 +28,7 @@ final	boolean DEBUG = false;
 	int pid 		= 0;
 	String ss 		= null;
 	
-	String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/ejemplos/";
+	String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/concurso/";
 	String pagina = "Admin.html";
 	
 	ss = request.getParameter("ss") == null ? "": request.getParameter("ss");
@@ -94,7 +94,12 @@ final	boolean DEBUG = false;
 	}
 	
 	if (!DEBUG)
+	{
+		try{conn.close();} catch(Exception e){}
 		response.sendRedirect(servidor + pagina);
+	}
 	else
+	{
 		out.println("<br/><br/><br/><br/><br/>Acabo");
+	}
 %>

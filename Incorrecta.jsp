@@ -2,7 +2,7 @@
 <%
 	//String db = request.getParameter("db");
 	String db = "concurso";
-	String user 	= "USER";
+	String user 	= "USER2";
 	String passwd	= "CAUser";
 	
 	Connection conn = null;
@@ -10,7 +10,7 @@
 	
 	String sql = null;
 	
-	String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/ejemplos/";
+	String servidor = "http://" + request.getServerName()+ ":" + request.getServerPort()+ "/concurso/";
 	String pagina = "maestros.jsp";
 	
 	HttpSession preguntas = request.getSession();
@@ -28,6 +28,7 @@
 		stmt.executeUpdate(sql);
 		
 		reid = null;
+		try{conn.close();} catch(Exception e){}
 		
 		response.sendRedirect(servidor+pagina);
 		

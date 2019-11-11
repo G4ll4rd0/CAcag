@@ -7,11 +7,26 @@
 <html lang="es-mx" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>Concurso Académico | Maestros</title>
+	<meta http-equiv="refresh" content="5">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link href="css/principal.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+<link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css" />
 <script src="js/aks.main.js"></script>
 <script src="js/aks.ajax.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 <script>
+	$(document).ready(function(){
+		setinterval(function(){
+			$('#pregunta').load('maestros.jsp');
+		},5000);
+	})
+</script>
+<script id="pregunta">
 //local functions
 var theForm		= null;
 var theFilters	= null;

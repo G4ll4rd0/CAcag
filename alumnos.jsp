@@ -100,9 +100,6 @@
     <header>Concurso Académico 2019</header>
     <footer>Ingenierías XXVIII</footer>
 
-    <!-- Texto maestros -->
-    <h1 class="alumnos">Alumnos</h1>
-
     <!-- Workarea -->
     <div class="container">
 	    <div class="main-content">
@@ -118,9 +115,9 @@
     <div id="cuadro_resp">
 	    <form action = "UpRespAl.jsp" method = "post">
 	    	<!-- Cuadro respuesta --> 
-	    	<input type="Texto" id="inp" name = "inp" class="alumnos" placeholder="Respuesta"></input> 
+	    	<input type="Texto" id="inp" name = "inp" style="position: absolute;width: 100px;height: 100px;left: 545px;top: 380px;background: #E0E0E0;border: 3px solid #009945;box-sizing: border-box;" placeholder="Respuesta"></input> 
 	    	<!-- Boton de enviar -->  
-	    	<button type="submit" style="" class="btn btn-outline-success"> Enviar respuesta</button>
+	    	<button type="submit"  class="btn btn-outline-success alumnos"> Enviar respuesta</button>
 		</form>
 	</div>
 

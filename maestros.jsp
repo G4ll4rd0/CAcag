@@ -55,14 +55,10 @@ function validate()
 </head>
 
 <body onload="onLoad();">
-    <!-- Barra superior -->
-  	 <div class="maestrosBarraSup">
-      <h1 class="maestrosBarraSupLetra"style="top: 0%;">Concurso Académico 2K19</h1>
-    </div>
-	<!-- Barra inferior -->
-   	<div class="maestrosBarraInf">
-      <h1 class="maestrosBarraInfLetra">Ingenierías XXVIII</h1></div>
-
+    
+	<!--Barras-->
+    <header>Concurso Académico 2019</header>
+    <footer>Ingenierías XXVIII</footer>
 
     <!-- Texto maestros -->
     <h1 class="maestrosText"style="top: 12%;">Maestros</h1>

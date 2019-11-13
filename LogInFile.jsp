@@ -16,7 +16,7 @@
    </head> 
    <body>
     	<!-- Barra superior -->
-		<header>Concurso AcadÃ©mico 2019</header>
+		<header>Concurso Académico 2019</header>
 
     <!-- Div -->
     <div>
@@ -34,7 +34,7 @@ final boolean DEBUG = false;
 	ResultSet rs	= null;
 	
 	String sql 		= null;
-	String prnt 	= "<br/>Usuario o contraseÃ±a incorrectos";
+	String prnt 	= "<br/>Usuario o contraseña incorrectos";
 	int t 			= 0;
 	int id 			= 0;
 	String us 		= null;
@@ -106,6 +106,6 @@ final boolean DEBUG = false;
     </div>
 
     	<!-- Barra inferior -->
-		<footer>IngenierÃ­as XXVIII</footer>
+		<footer>Ingenierías XXVIII</footer>
 	</body>
 </html>

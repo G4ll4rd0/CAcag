@@ -9,13 +9,16 @@
 <title>Concurso Académico | Maestros</title>
 	<meta http-equiv="refresh" content="5">
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link href="css/principal.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
-<link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css" />
+       	<!--estilos-->
+		<link href="css/principal.css" rel="stylesheet" type="text/css" />
+		<link href="css/principal.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-grid.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-reboot.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+		<link href="css/bootstrap-reboot.css" rel="stylesheet" type="text/css" />
+		<link rel="stylesheet" type="text/css" href="css/CACSS.css">
 <script src="js/aks.main.js"></script>
 <script src="js/aks.ajax.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

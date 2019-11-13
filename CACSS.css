@@ -1,3 +1,10 @@
+/*Página en general*/
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
 header {
 	position: fixed;
 	z-index: 0;
@@ -26,6 +33,7 @@ footer {
 	text-align: right;
 }
 
+/*Página LogIn*/
 
 h1.logIn{
 	position:absolute;
@@ -51,6 +59,16 @@ input.logIn {
 	color: #000000;
 }
 
+button.logIn {
+	position: absolute;
+	width: 12%;
+	height: 5%;
+	top: 62.08%;
+	left: 48%;
+}
+
+/*Página admin*/
+
 h1.admin {
 	position: absolute;
 	font-family: Roboto Slab;
@@ -68,21 +86,244 @@ button.admin {
 	mix-blend-mode: normal;
 	font-family:Roboto Slab;
 	font-style: normal;
-	font-size: 250%; 
+	font-size: 3.75em; 
 }
+
+/*Página alumnos*/
 
 h1.alumnos {
 	position:absolute;
-	left: 558px;
-	top: 80px;
+	left: 40.85%;
+	top: 10.41%;
 	font-family: Roboto Slab;
 	font-style: normal;
 	font-weight: normal;
 	font-size: 3.75em;
+}
+
+input.alumnos {
+	position: absolute;
+	width: 7.32%;
+	height: 7.68%;
+	left: 39.9%;
+	top: 49.5%;
+	background: #E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+}
+
+button.alumnos {
+	position: absolute;
+	width: 7.32%;
+	height: 13.02%;
+	left: 675px;
+	top: 380px;
+}
+
+div.alumnosBrowse {
+	position: absolute;
+	width: 26%;
+	height: 40%;
+	left: 48.83%;
+	top: 14.64%;
+	background: #E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+}
+
+/*Página maestros*/
+
+div.maestrosBarraSup{
+	position: absolute;
+	width: 100%;
+	height: 13.06%;
+	background: #009945;
+	mix-blend-mode: normal;
+}
+
+div.maestrosBarraSupLetra{
+    position:absolute;
+    height: 13.8%;
+    left: 2.2%;
+    font-family: Roboto Slab;
+    font-style: normal;
+    font-weight: normal;font-size: 5em;
+    color: #FFFFFF;
+}
+
+div.maestrosBarraInf{
+	position: absolute;
+	width: 100%;
+	height: 13.06%;
+	background: #009945;
+	mix-blend-mode: normal;
+}
+
+div.maestrosBarraInfletra{
+   position:absolute;
+   height: 13.8%;
+   right: 0%;
+   bottom: 75%;
+   font-family: Roboto Slab;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 375%;
+   color: #FFFFFF;
+}
+
+div.maestrosText{
+   position:absolute;
+   width: 6.25em;
+   height: 6.625em;
+   left: 41%;
+   font-family: Roboto Slab;
+   font-style: normal;
+   font-weight: normal;
+   font-size: 3.75em;
+   line-height: 6.625em;
+}
+
+button.maestrosBotonCo{
+	position: absolute;
+	width: 2.3%;
+	height: 4.9%;
+	left: 45%;
+	background: #009945;
+	border: .1875em solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: .9375em;
+	line-height: 6.625em;
+	cursor: pointer;
+	border-radius: .5em;
+}
+
+button.maestrosBotonIn{
+	position: absolute;
+	width: 2.3%;
+	height: 4.9%;
+	left: 51%;
+	background: #FF0000;
+	border: .1875em solid #FF0000;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: .9375em;
+	line-height: 6.625em;
+	cursor: pointer;
+	border-radius: .5em;
+}
+
+h1.maestrosBrowsePreg {
+	position:absolute;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 2.4em;
+	line-height: 106px;
+	opacity: 0.5;
+}
+
+div.maestrosBrowsePreg {
+	position: absolute;
+	width: 26%;
+	height: 40%;
+	background: #E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 1em;
 	line-height: 106px;
 }
 
+h1.maestrosBrowseResAl {
+	position:absolute;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	line-height: 106px;opacity: 0.5;
+}
 
+div.maestrosBrowseResAl {
+	position: absolute;
+	width: 26%;
+	height: 12%;
+	background:#E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 106px; 
+}
+
+h1.maestrosBrowseResCo {
+	position:absolute;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	line-height: 106px;
+	opacity: 0.5; 
+}
+
+div.maestrosBrowseResCo {
+	position: absolute;
+	width: 26%;
+	height: 12%;
+	background: #E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 106px; 
+}
+
+h1.maestrosBrowseGrupo {
+	position:absolute;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 38px;
+	line-height: 106px;
+	opacity: 0.5; 
+}
+
+div.maestrosBrowseGrupo {
+	position: absolute;
+	width: 8%;
+	height: 12%;
+	background: #E0E0E0;
+	border: 3px solid #009945;
+	box-sizing: border-box;
+	font-family: Roboto Slab;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 15px;
+	line-height: 106px;
+}
+
+/*Imágenes*/
+
+img.cag {
+	position: absolute;
+	width:25.19%;
+	height:45.57%;
+	left:7.32%;
+	top:14.97%;
+}
 
 img.cruz {
 	position: absolute;
@@ -101,4 +342,3 @@ img.bchc {
 	top:24.32%;
 	opacity: 0.6;
 }
-

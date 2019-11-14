@@ -63,7 +63,7 @@ button.logIn {
 	position: absolute;
 	width: 12%;
 	height: 5%;
-	top: 62.08%;
+	top: 66.08%;
 	left: 48%;
 }
 
@@ -114,24 +114,22 @@ input.alumnos {
 
 button.alumnos {
 	position: absolute;
-	width: 7.32%;
+	width: 9%;
 	height: 13.02%;
 	left: 675px;
 	top: 380px;
+	text-align:justify;
 }
 
 div.alumnosBrowse {
 	position: absolute;
-	width: 26%;
-	height: 40%;
-	left: 48.83%;
-	top: 14.64%;
+	width: 39%;
+	height: 22%;
+	left: 25%;
+	top: 28%;
 	background: #E0E0E0;
 	border: 3px solid #009945;
 	box-sizing: border-box;
-	font-family: Roboto Slab;
-	font-style: normal;
-	font-weight: normal;
 }
 
 /*Página maestros*/
@@ -226,7 +224,6 @@ h1.maestrosBrowsePreg {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 2.4em;
-	line-height: 106px;
 	opacity: 0.5;
 }
 
@@ -241,7 +238,6 @@ div.maestrosBrowsePreg {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 1em;
-	line-height: 106px;
 }
 
 h1.maestrosBrowseResAl {
@@ -341,4 +337,13 @@ img.bchc {
 	left:72.5%;
 	top:24.32%;
 	opacity: 0.6;
+	z-index: 99999999;
+}
+
+img.imgpreg {
+	z-index: 0;
+	width: 50%;
+	left:75%;
+	top:110%;
+	border: 3px solid #009945;
 }

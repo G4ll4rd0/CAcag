@@ -16,7 +16,7 @@
    </head> 
    <body>
     	<!-- Barra superior -->
-		<header>Concurso Académico 2019</header>
+		<header>Concurso AcadÃ©mico 2019</header>
 
     <!-- Div -->
     <div>
@@ -25,7 +25,7 @@
 <%
 final boolean DEBUG = false;
 	//String db = request.getParameter("db");
-	String db 		= "concurso";
+	String db 	= "concurso";
 	String user 	= "USER2";
 	String passwd	= "CAUser";
 	
@@ -33,12 +33,12 @@ final boolean DEBUG = false;
 	Statement stmt	= null;
 	ResultSet rs	= null;
 	
-	String sql 		= null;
-	String prnt 	= "<br/>Usuario o contraseña incorrectos";
-	int t 			= 0;
-	int id 			= 0;
-	String us 		= null;
-	String pw = null;
+	String sql 	= null;
+	String prnt 	= "<br/>Usuario o contraseÃ±a incorrectos";
+	int t 		= 0;
+	int id 		= 0;
+	String us 	= null;
+	String pw 	= null;
 	
 	us = request.getParameter("us") == null ? "": request.getParameter("us");
 	pw = request.getParameter("pw") == null ? "": request.getParameter("pw");
@@ -106,6 +106,6 @@ final boolean DEBUG = false;
     </div>
 
     	<!-- Barra inferior -->
-		<footer>Ingenierías XXVIII</footer>
+		<footer>IngenierÃ­as XXVIII</footer>
 	</body>
 </html>
